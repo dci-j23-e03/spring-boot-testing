@@ -26,7 +26,7 @@ public class DepartmentController {
 
     @GetMapping
     public List<Department> getAllDepartments(
-            @RequestParam(defaultValue = "0") Integer pageNo,
+            @RequestParam(defaultValue = "1") Integer pageNo,
             @RequestParam(defaultValue = "10") Integer pageSize,
             @RequestParam(defaultValue = "id") String sortBy,
             @RequestParam(defaultValue = "asc") String sortingOrder
